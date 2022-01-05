@@ -20,7 +20,7 @@ class App extends Component {
   handleClick = id => {
     this.shuffleArray();
     this.handleScore(id);
-    console.log(this.state.Clicked);
+    
   };
 
   handleScore = id => {
@@ -36,7 +36,7 @@ class App extends Component {
         this.setState({ currentScore: 0 });
         this.setState({ Clicked: true });
         this.state.characters.superheroes.forEach(element => (element.clicked = false));
-        console.log(this.state.characters.superheroes);
+        
       }
     });
   };
